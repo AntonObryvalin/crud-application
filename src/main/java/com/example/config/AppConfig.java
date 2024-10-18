@@ -40,7 +40,7 @@ public class AppConfig {
 
         Properties jpaProperties = new Properties();
         jpaProperties.put("hibernate.hbm2ddl.auto", "create-drop");
-        jpaProperties.put("hibernate.dialect", "org.hibernate.dialect.MySQLDialect");
+        jpaProperties.put("hibernate.dialect", "org.hibernate.dialect.MySQL8Dialect");
         jpaProperties.put("hibernate.show_sql", "true");
 
         factoryBean.setJpaProperties(jpaProperties);
