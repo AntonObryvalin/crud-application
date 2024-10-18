@@ -16,15 +16,14 @@ public class User {
     @Column(name = "email", nullable = false, unique = true)
     private String email;
 
-    // Constructors
-    public User() {}
+    public User() {
+    }
 
     public User(String name, String email) {
         this.name = name;
         this.email = email;
     }
 
-    // Getters and Setters
     public Long getId() {
         return id;
     }
